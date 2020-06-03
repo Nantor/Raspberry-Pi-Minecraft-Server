@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-$MINECRAFT_USER=minecraft
-$MINECRAFT_HOME=/home/$MINECRAFT_USER
+$MINECRAFT_USER="minecraft"
+$MINECRAFT_HOME="/home/$MINECRAFT_USER"
 
 sudo apt update
 sudo apt -y install jq openjdk-8-jre-headless
