@@ -8,7 +8,7 @@ sudo apt -y install jq openjdk-8-jre-headless
 
 sudo adduser --system --home $MINECRAFT_HOME $MINECRAFT_USER
 
-sudo su - minecraft -s /bin/bash -c "wget -q https://github.com/Nantor/Raspberry-Pi-Minecraft-Server/raw/master/getServer.sh \
+sudo su - $MINECRAFT_USER -s /bin/bash -c "wget -q https://github.com/Nantor/Raspberry-Pi-Minecraft-Server/raw/master/getServer.sh \
 && wget -q https://github.com/Nantor/Raspberry-Pi-Minecraft-Server/raw/master/start.sh \
 && wget -q https://github.com/Nantor/Raspberry-Pi-Minecraft-Server/raw/master/stop.sh \
 && chmod +x getServer.sh start.sh stop.sh \
